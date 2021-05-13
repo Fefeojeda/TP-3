@@ -1,14 +1,14 @@
 [
   {
     "marca": "Ford",
-    "modelo": "Fiesta",
-    "precio": 150000,
+    "modelo": "Mustang",
+    "precio": 1500000,
     "km": 200,
-    "color": "Azul",
-    "cuotas": 12,
-    "anio": 2019,
-    "patente": "APL123",
-    "vendido": true
+    "color": "Rojo",
+    "cuotas": 64,
+    "anio": 2021,
+    "patente": "LPA367",
+    "vendido": false
   },
   {
     "marca": "Toyota",
