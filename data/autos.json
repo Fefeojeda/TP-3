@@ -18,7 +18,7 @@
     "color": "Blanco",
     "cuotas": 48,
     "anio": 2019,
-    "patente": "JLK116",
+    "patente": "GHD732",
     "vendido": true
   },
   {
@@ -29,8 +29,8 @@
     "color": "Blanco",
     "cuotas": 10,
     "anio": 2019,
-    "patente": "JLR116",
-    "vendido": true
+    "patente": "NZH888",
+    "vendido": false
   },
   {
     "marca": "Ford",
@@ -40,8 +40,8 @@
     "color": "Blanco",
     "cuotas": 14,
     "anio": 2019,
-    "patente": "JLW116",
-    "vendido": false
+    "patente": "OPM437",
+    "vendido": true
   },
   {
     "marca": "Fiat",
@@ -51,7 +51,7 @@
     "color": "Blanco",
     "cuotas": 16,
     "anio": 2019,
-    "patente": "JKI116",
+    "patente": "ABC998",
     "vendido": false
   }
 ]
