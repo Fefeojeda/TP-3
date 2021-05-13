@@ -30,7 +30,22 @@ const autos = {
     },
     totalDeVentas : function(){
         return autos.listaDeVentas().reduce((acum,precio) => acum + precio)
+    },
+    agregarAuto : function(marca, modelo, precio, km, color, cuotas, anio, patente, vendido) {
+        let nuevoAuto = {                              
+            'marca': marca,
+            'modelo': modelo,
+            'precio': precio,
+            'km': km,
+            'color': color,
+            'cuotas': cuotas,
+            'anio': anio,
+            'patente': patente,
+            'vendido': vendido
+        }
+        autos_db.push(nuevoAuto)
+        autos.guardarCambios(autos_db)
+        console.log('Vehículo agregado con éxito')}
     }
-}
-
+    
 module.exports = autos

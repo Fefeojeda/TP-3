@@ -1,5 +1,5 @@
 const process = require('process');
-const { buscarAuto, venderAuto,autosParaLaVenta, autosNuevos, listaDeVentas, totalDeVentas} = require('./autos');
+const { buscarAuto, venderAuto,autosParaLaVenta, autosNuevos, listaDeVentas, totalDeVentas, agregarAuto} = require('./autos');
 
 const comando = process.argv[2];
 
@@ -29,6 +29,18 @@ switch (comando) {
         break
     case undefined :
         console.log('Por favor ingresa una acción');
+    case 'agregar' : 
+        let marca = process.argv[3];
+        let modelo = process.argv[4];
+        let precio = process.argv[5];
+        let km = process.argv[6];
+        let color = process.argv[7];
+        let cuotas = process.argv[8];
+        let anio = process.argv[9];
+        let patente = process.argv[10];
+        let vendido = process.argv[11];
+        agregarAuto(marca,modelo,precio,km,color,cuotas,anio,patente,vendido)
+        break;
     default:
         break;
 }
