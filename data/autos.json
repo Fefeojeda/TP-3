@@ -30,7 +30,7 @@
     "cuotas": 10,
     "anio": 2019,
     "patente": "NZH888",
-    "vendido": true
+    "vendido": false
   },
   {
     "marca": "Ford",
