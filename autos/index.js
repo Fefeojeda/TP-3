@@ -48,7 +48,6 @@ const autos = {
             console.log('Solo se acepta true o false en la sección vendido');
             return
         }
-        console.log(patente);
         let autosPorPatente = autos_db.filter(element => element.patente == patente)
         if (autosPorPatente.length > 0) {
             console.log('El auto ya existe y es:');
