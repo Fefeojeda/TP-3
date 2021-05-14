@@ -1,9 +1,12 @@
 const process = require('process');
-const { buscarAuto, venderAuto,autosParaLaVenta, autosNuevos, listaDeVentas, totalDeVentas, agregarAuto} = require('./autos');
+const { buscarAuto, venderAuto,autosParaLaVenta, autosNuevos, listaDeVentas, totalDeVentas, agregarAuto,listar, borrarPorPatente} = require('./autos');
 
 const comando = process.argv[2];
 
 switch (comando) {
+    case "listar": 
+    listar()
+    break;
     case "buscar":
         if (process.argv[3]) {
             let resultado = buscarAuto(process.argv[3]);
@@ -41,6 +44,10 @@ switch (comando) {
         let vendido = process.argv[11];
         agregarAuto(marca,modelo,precio,km,color,cuotas,anio,patente,vendido)
         break;
+    case "borrar": 
+    borrarPorPatente(process.argv[3])
+    break;
     default:
+        console.log('Comando no registrado');
         break;
 }
