@@ -32,6 +32,20 @@ const autos = {
         return autos.listaDeVentas().reduce((acum,precio) => acum + precio)
     },
     agregarAuto : function(marca, modelo, precio, km, color, cuotas, anio, patente, vendido) {
+        let verificacionNumber = anio+cuotas+km+precio 
+        if (isNaN(verificacionNumber)) {
+            let arrayDeErrores = [];
+            isNaN(km) ? arrayDeErrores.push('km') : null;
+            isNaN(precio) ? arrayDeErrores.push(' precio') : null;
+            isNaN(cuotas) ? arrayDeErrores.push(' cuotas') : null;
+            isNaN(anio) ? arrayDeErrores.push(' anio') : null;       
+            console.log(`${arrayDeErrores} necesitan ser valores numericos`); 
+            return
+        }
+        if (!(vendido === 'true' || vendido === 'false')) {
+            console.log('Solo se acepta true o false en la sección vendido');
+            return
+        }
         let nuevoAuto = {                              
             'marca': marca,
             'modelo': modelo,
